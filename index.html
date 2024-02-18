@@ -9,7 +9,8 @@
 </head>
 <body>
     <header class="container-fluid bg-primary-subtle">
-        <div>
+      <fieldset>  
+      <div>
           <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">MassData</a>
@@ -31,7 +32,7 @@
               </div>
             </div>
           </nav>
-      <h1 class="text-center">Bem vindo ao site de banco de dados de espectrometria de massas!</h1>
+      <h2 class="text-center">Bem vindo ao site de banco de dados de espectrometria de massas!</h2>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -49,18 +50,48 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
-      </div>        
+      </div>
+      </div>
+      </fieldset>        
     </header>
 
-    <section class="container-fluid text-bg-dark">
+    <section class="container-fluid bg-primary-subtle">
+        <h3 class="text-center">O que deseja procurar?</h3>
+        <form method="GET" action="">
 
+            <fieldset>
+                <legend>Dados de compostos</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="nome" id="nome">
+                        Nome do composto
+                    </label>
+                    <input type="text" class="form-control" requered name="nome">
+                </div>
 
+                <div class="mb-3">
+                    <label class="form-label" for="molecularform" id="molecularform">
+                        Fórmula molecular
+                    </label>
+                    <input type="text" class="form-control" required name="molecularform">
+                </div>
 
-
-
-
+                <div class="mb-3">
+                    <label class="form-label" for="molecularmass" id="molecularmass">
+                        Massa molecular
+                    </label>
+                    <input type="text" class="form-control" name="molecularmass">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="charge" id="charge">
+                      Carga
+                  </label>
+                  <input type="number" class="form-control" name="charge">
+              </div>
+            </fieldset>
+            <button class="btn btn-primary">Buscar</button>
+        </form>
     </section>
-    <footer class="container-fluid bg-primary-subtle">
+    <footer class="container-fluid text-center"><br>
       <p>Desenvolvido por Giovanni Bonatti Bevilaqua</p>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
